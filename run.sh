@@ -62,11 +62,11 @@ forever restart $SERVER_SCRIPT
 rm waterways.mbtiles
 
 # railways
- +./crunch.sh planet.mbtiles railways 32
- +cp railways.mbtiles $RESULTS_DIR/railways.mbtiles.tmp
- +rm $RESULTS_DIR/railways.mbtiles -f
- +mv $RESULTS_DIR/railways.mbtiles.tmp $RESULTS_DIR/railways.mbtiles
- +forever restart $SERVER_SCRIPT
- +rm railways.mbtiles
+./crunch.sh planet.mbtiles railways 32
+cp railways.mbtiles $RESULTS_DIR/railways.mbtiles.tmp
+rm $RESULTS_DIR/railways.mbtiles -f
+mv $RESULTS_DIR/railways.mbtiles.tmp $RESULTS_DIR/railways.mbtiles
+forever restart $SERVER_SCRIPT
+rm railways.mbtiles
 
 rm planet.mbtiles
